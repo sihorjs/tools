@@ -1,0 +1,104 @@
+{
+    "import React": {
+        "prefix": "imr",
+        "body": "import React from 'react';$0",
+        "scope": "javascript"
+    },
+    "import PropTypes": {
+        "prefix": "impt",
+        "body": "import PropTypes from 'prop-types';$0",
+        "scope": "javascript"
+    },
+    "destructProps": {
+        "prefix": "cp",
+        "body": ["const { $1 } = this.props;$0"],
+        "description": "Creates and assigns a local variable using props destructing",
+        "scope": "javascript"
+    },
+    "destructState": {
+        "prefix": "cs",
+        "body": ["const { $1 } = this.state;$0"],
+        "description": "Creates and assigns a local variable using state destructing",
+        "scope": "javascript"
+    },
+    "classConstructor": {
+        "prefix": "rconst",
+        "body": [
+            "constructor(props) {",
+            "\tsuper(props)",
+            "",
+            "\tthis.state = {",
+            "\t\t$0",
+            "\t}",
+            "}",
+            ""
+        ],
+        "description": "Adds a default constructor with empty state",
+        "scope": "javascript"
+    },
+    "propertyGet": {
+        "prefix": "pge",
+        "body": ["get ${1:propertyName}() {", "\treturn this.${0}", "}", ""],
+        "description": "Creates a getter property inside a class",
+        "scope": "javascript"
+    },
+    "method": {
+        "prefix": "met",
+        "body": ["${1:methodName} = (${2:params}) => {", "\t${0}", "};", ""],
+        "description": "Creates a method inside a class",
+        "scope": "javascript"
+    },
+    "emptyState": {
+        "prefix": "est",
+        "body": ["state = {", "\t$0", "};", ""],
+        "description": "Creates empty state object",
+        "scope": "javascript"
+    },
+    "componentDidMount": {
+        "prefix": "cdm",
+        "body": ["componentDidMount() {", "\t$0", "}", ""],
+        "scope": "javascript"
+    },
+    "componentDidUpdate": {
+        "prefix": "cdu",
+        "body": ["componentDidUpdate(prevProps, prevState) {", "\t$0", "}", ""],
+        "scope": "javascript"
+    },
+    "componentWillUnmount": {
+        "prefix": "cwu",
+        "body": ["componentWillUnmount() {", "\t$0", "}", ""],
+        "scope": "javascript"
+    },
+    "componentRender": {
+        "prefix": "ren",
+        "body": ["render() {", "\treturn (", "\t\t$0", "\t);", "}"],
+        "scope": "javascript"
+    },
+    "createRef": {
+        "prefix": "cref",
+        "body": ["this.${1:refName}Ref = React.createRef();", ""],
+        "scope": "javascript"
+    },
+    "componentSetStateObject": {
+        "prefix": "sst",
+        "body": "this.setState({ $0 });",
+        "description": "Performs a shallow merge of nextState into current state",
+        "scope": "javascript"
+    },
+    "componentSetStateFunc": {
+        "prefix": "ssf",
+        "body": ["this.setState(prevState => ({ $0 });", ""],
+        "description": "Performs a shallow merge of nextState into current state",
+        "scope": "javascript"
+    },
+    "componentProps": {
+        "prefix": "props",
+        "body": "this.props.$0",
+        "scope": "javascript"
+    },
+    "componentState": {
+        "prefix": "state",
+        "body": "this.state.$0",
+        "scope": "javascript"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "reactArrowFunctionComponentWithPropTypes": {
+        "prefix": "rafcp",
+        "body": [
+            "import React from 'react';",
+            "import PropTypes from 'prop-types';",
+            "import './${1:${TM_FILENAME_BASE}}.scss';",
+            "",
+            "const ${1:${TM_FILENAME_BASE}} = props => {",
+            "\treturn (",
+            "\t\t<div>",
+            "\t\t\t$0",
+            "\t\t</div>",
+            "\t);",
+            "}",
+            "",
+            "${1:${TM_FILENAME_BASE}}.propTypes = {",
+            "",
+            "};",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}};",
+            ""
+        ],
+        "description": "Creates a React Arrow Function Component system with PropTypes",
+        "scope": "javascript"
+    },
+    "reactClassComponentWithPropTypes": {
+        "prefix": "rcep",
+        "body": [
+            "import React, { Component } from 'react';",
+            "import PropTypes from 'prop-types';",
+            "import './${1:${TM_FILENAME_BASE}}.scss';",
+            "",
+            "class ${1:${TM_FILENAME_BASE}} extends Component {",
+            "\tstatic propTypes = {",
+            "",
+            "\t};",
+            "",
+            "\trender() {",
+            "\t\treturn (",
+            "\t\t\t<div>",
+            "\t\t\t\t$0",
+            "\t\t\t</div>",
+            "\t\t);",
+            "\t}",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}};",
+            ""
+        ],
+        "description": "Creates a React component class with PropTypes",
+        "scope": "javascript"
+    }
+}

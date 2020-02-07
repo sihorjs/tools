@@ -1,0 +1,22 @@
+{
+    "element": {
+        "prefix": "__",
+        "body": ["&__$1 {", "$0", "}"],
+        "scope": "css,scss,less"
+    },
+    "modifier": {
+        "prefix": "_",
+        "body": ["&_$1 {", "$0", "}"],
+        "scope": "css,scss,less"
+    },
+    "pseudoElement": {
+        "prefix": "::",
+        "body": ["&::{1|before,after|} {", "\t$0", "}"],
+        "scope": "css,scss,less"
+    },
+    "not": {
+        "prefix": "not",
+        "body": ["&:not($1) {", "\t$0", "}"],
+        "scope": "css,scss,less"
+    }
+}

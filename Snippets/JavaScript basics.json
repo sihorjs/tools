@@ -1,0 +1,20 @@
+{
+    "destructingObject": {
+        "prefix": "dob",
+        "body": "const {${1:propertyName}} = ${2:objectToDestruct};",
+        "description": "Creates and assigns a local variable using object destructing",
+        "scope": "javascript"
+    },
+    "destructingArray": {
+        "prefix": "dar",
+        "body": "const [${1:propertyName}] = ${2:arrayToDestruct};",
+        "description": "Creates and assigns a local variable using array destructing",
+        "scope": "javascript"
+    },
+    "functionConstant": {
+        "prefix": "fn",
+        "body": ["const $1 = (${2:params}) => {", "\t${2}", "};", ""],
+        "description": "Creates function-constant",
+        "scope": "javascript"
+    }
+}

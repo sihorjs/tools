@@ -1,0 +1,38 @@
+{
+    "importDefault": {
+        "prefix": "imp",
+        "body": "import ${2:moduleName} from '${1:module}';$0",
+        "scope": "javascript"
+    },
+    "importNamed": {
+        "prefix": "imn",
+        "body": "import { ${2:namedExport} } from '${1:module}';$0",
+        "scope": "javascript"
+    },
+    "exportDefault": {
+        "prefix": "exp",
+        "body": "export default $1;$0"
+    },
+    "reexportComponent": {
+        "prefix": "rex",
+        "body": [
+            "import ${TM_DIRECTORY/^.+\\/(.*)$/$1/} from './${TM_DIRECTORY/^.+\\/(.*)$/$1/}';",
+            "",
+            "export default ${TM_DIRECTORY/^.+\\/(.*)$/$1/};",
+            ""
+        ],
+        "description": "Reexports component from index file",
+        "scope": "javascript"
+    },
+    "exportComponentContainer": {
+        "prefix": "rexc",
+        "body": [
+            "import ${TM_DIRECTORY/^.+\\/(.*)$/$1/}Container from './${TM_DIRECTORY/^.+\\/(.*)$/$1/}Container';",
+            "",
+            "export default ${TM_DIRECTORY/^.+\\/(.*)$/$1/}Container;",
+            ""
+        ],
+        "description": "Reexports container from index file",
+        "scope": "javascript"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "describeBlock": {
+        "prefix": "desc",
+        "body": ["describe('$1', () => {", "\t$0", "});", ""],
+        "description": "Testing `describe` block",
+        "scope": "javascript"
+    },
+    "itBlock": {
+        "prefix": "tit",
+        "body": ["it('should $1', () => {", "\t$0", "});", ""],
+        "description": "Testing `it` block",
+        "scope": "javascript"
+    }
+}
